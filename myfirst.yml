@@ -1,0 +1,15 @@
+name: my first workflow for yaml example # name of wf
+
+on: push # this is the trigger
+
+jobs:
+     first_job:   # name of the job
+         runs-on: ubuntu-latest
+         steps: 
+           - name: welcome message
+             run: echo "my first github prog!"
+           - name: list files
+             run: ls 
+           - name: Read the file
+             run: cat README.md
+             s
